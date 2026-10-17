@@ -1,0 +1,5 @@
+{
+  "max_input_chars": 200000,
+  "entropy_min_length": 24,
+  "entropy_threshold": 4.0
+}

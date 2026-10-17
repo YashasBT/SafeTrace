@@ -1,0 +1,21 @@
+{
+  "sample_size": 5,
+  "evaluation_type": "automated heuristic; not human-verified diagnosis",
+  "methods": {
+    "Raw logs": {
+      "diagnosis_accuracy": 97.14,
+      "mean_diagnostic_score": 0.9714,
+      "privacy_score": null
+    },
+    "Naive redaction": {
+      "diagnosis_accuracy": 92.7,
+      "mean_diagnostic_score": 0.927,
+      "privacy_score": null
+    },
+    "SafeTrace": {
+      "diagnosis_accuracy": 92.7,
+      "mean_diagnostic_score": 0.927,
+      "privacy_score": null
+    }
+  }
+}

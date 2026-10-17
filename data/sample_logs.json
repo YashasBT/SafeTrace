@@ -1,0 +1,10 @@
+[
+  {
+    "name": "authentication failure",
+    "log": "ERROR: AuthenticationError: invalid credential for alice@example.com\nAuthorization: Bearer demo_secret_token_12345\nFile \"/home/alice/project/api.py\", line 42, in authenticate\nHTTP 401: request failed"
+  },
+  {
+    "name": "database connection",
+    "log": "ERROR database unavailable: postgres://demo_user:demo_password@db.internal:5432/app\nFile \"/home/bob/service/db.py\", line 88, in connect\nHTTP 503"
+  }
+]

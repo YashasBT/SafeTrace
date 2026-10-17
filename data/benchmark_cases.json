@@ -1,0 +1,81 @@
+[
+  {
+    "case_id": "SYN-001",
+    "original_trace": "TypeError: expected string, got None while parsing config\nFile \"/app/parser.py\", line 24, in parse_config",
+    "expected_root_cause": "type error none config",
+    "diagnostic_keywords": [
+      "TypeError",
+      "None",
+      "parsing config",
+      "parser.py"
+    ],
+    "verified_fix": "Validate the config value before parsing and handle None explicitly.",
+    "source_url": "",
+    "license_notes": "Synthetic fixture authored for SafeTrace; not copied from a public issue.",
+    "provenance": "synthetic",
+    "canaries": []
+  },
+  {
+    "case_id": "SYN-002",
+    "original_trace": "ConnectionError: database connection timed out after 30 seconds\nFile \"/app/db.py\", line 91, in connect",
+    "expected_root_cause": "connection error database timeout",
+    "diagnostic_keywords": [
+      "ConnectionError",
+      "database",
+      "timed out",
+      "30 seconds"
+    ],
+    "verified_fix": "Check database reachability, pool saturation, and timeout configuration.",
+    "source_url": "",
+    "license_notes": "Synthetic fixture authored for SafeTrace; not copied from a public issue.",
+    "provenance": "synthetic",
+    "canaries": []
+  },
+  {
+    "case_id": "SYN-003",
+    "original_trace": "KeyError: 'user_id' in build_profile\nFile \"/app/profile.py\", line 53, in build_profile",
+    "expected_root_cause": "key error user id profile",
+    "diagnostic_keywords": [
+      "KeyError",
+      "user_id",
+      "build_profile"
+    ],
+    "verified_fix": "Validate required keys and handle missing user_id before profile construction.",
+    "source_url": "",
+    "license_notes": "Synthetic fixture authored for SafeTrace; not copied from a public issue.",
+    "provenance": "synthetic",
+    "canaries": []
+  },
+  {
+    "case_id": "SYN-004",
+    "original_trace": "HTTP 401 AuthenticationError: invalid bearer credential for dev@example.com\nAuthorization: Bearer demo_token_value_12345\nFile \"/home/dev/api.py\", line 42, in authenticate",
+    "expected_root_cause": "authentication error invalid bearer credential",
+    "diagnostic_keywords": [
+      "HTTP 401",
+      "AuthenticationError",
+      "bearer credential",
+      "authenticate"
+    ],
+    "verified_fix": "Verify token validity and ensure authorization headers are correctly configured.",
+    "source_url": "",
+    "license_notes": "Synthetic fixture authored for SafeTrace; not copied from a public issue.",
+    "provenance": "synthetic",
+    "canaries": []
+  },
+  {
+    "case_id": "SYN-005",
+    "original_trace": "ValueError: invalid literal for int() with base 10: 'abc'\nFile \"/app/worker.py\", line 17, in parse_count",
+    "expected_root_cause": "value error invalid literal int",
+    "diagnostic_keywords": [
+      "ValueError",
+      "int()",
+      "base 10",
+      "parse_count"
+    ],
+    "verified_fix": "Validate input and handle non-numeric values before integer conversion.",
+    "source_url": "",
+    "license_notes": "Synthetic fixture authored for SafeTrace; not copied from a public issue.",
+    "provenance": "synthetic",
+    "canaries": []
+  }
+]
